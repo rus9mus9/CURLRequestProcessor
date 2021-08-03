@@ -10,8 +10,11 @@
 **Реальный пример использования:**
 Я реализовал интеграцию при помощи метода выше с сервисом ГИС ЕГРЗ (egrz.ru). Если попытаться зайти через обычный браузер, то получается следующее:
 
+![Вход в ЕГРЗ](https://raw.githubusercontent.com/rus9mus9/CURLRequestProcessor/main/egrz.png)
+
 На других ресурсах возможно следующее:
 
+![ERR SSL VERSION OR CIPHER MISMATCH](https://raw.githubusercontent.com/rus9mus9/CURLRequestProcessor/main/cipher_mismatch.jpg)
 
 
 Браузер не поддерживает шифрование по ГОСТ-2012. (Нужно ставить КриптоПРО CSP, установить сертификаты ресурса к которому обращаемся и заходить либо через IE (в случае Windows), [Яндекс Браузер](https://yandex.ru/support/browser-corporate/tls/tls.html) или [Chronium-GOST](https://www.cryptopro.ru/products/chromium-gost)). Таким же образом ГОСТ-2012 не поддерживает ни один Java HTTP клиент.
